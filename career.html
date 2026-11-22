@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Harsh Paun’s portfolio and resumes. Explore Apple-platform apps, AI and data projects, Unity prototypes, and software engineering experience.">
+<title>Harsh Paun | Software Engineering Portfolio</title>
+<style>
+:root{color-scheme:dark;--bg:#101716;--panel:#192321;--line:#354642;--text:#edf4ef;--muted:#bacbc3;--accent:#bcf5ad}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:1rem/1.6 system-ui,sans-serif}
+a{color:var(--accent);text-underline-offset:.25em}
+a:hover{color:white}
+:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+.wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+header{border-bottom:1px solid var(--line)}
+nav,footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-block:18px}
+.navlinks,.actions,.tags{display:flex;flex-wrap:wrap;gap:12px 20px}
+nav a{text-decoration:none}
+nav .name{font-weight:750;color:var(--text)}
+.hero{padding:clamp(48px,9vw,112px) 0 54px;display:grid;grid-template-columns:1.35fr .65fr;gap:32px;align-items:end}
+.kicker,.tags,.date{color:var(--accent);font-size:.88rem;font-family:ui-monospace,monospace}
+h1,h2,h3,p{margin:0}
+h1{font-size:clamp(3.4rem,9vw,7.8rem);line-height:1;letter-spacing:-.08em;margin:8px 0 22px}
+h2{font-size:clamp(2rem,5vw,3.2rem);letter-spacing:-.055em;line-height:1.15;margin-bottom:24px}
+h3{font-size:1.32rem;line-height:1.25}
+p{color:var(--muted)}
+.lede{font-size:clamp(1.05rem,2.7vw,1.32rem);max-width:56ch}
+.actions{align-items:center;margin-top:24px}
+.button{display:inline-block;border-radius:5px;padding:9px 15px;background:var(--accent);color:#122117;text-decoration:none;font-weight:735}
+.button:hover{background:white;color:#122117}
+.hero aside{padding:22px;border-left:2px solid var(--accent);background:var(--panel)}
+.hero aside strong{display:block;margin-bottom:5px}
+section{padding:42px 0;border-top:1px solid var(--line);scroll-margin-top:12px}
+.feature{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel)}
+.feature img{width:100%;height:100%;min-height:220px;object-fit:cover;display:block;background:#111}
+.feature .body,article.card{padding:23px}
+.feature h3,.card h3{margin:7px 0 9px}
+.feature .metrics{display:flex;gap:12px 22px;flex-wrap:wrap;margin-top:16px;color:var(--muted)}
+.metrics b{display:block;color:var(--accent);font-size:1.15rem}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
+.card{border:1px solid var(--line);border-radius:8px;background:var(--panel);overflow-wrap:anywhere}
+.card p+p{margin-top:8px}
+.row{display:grid;grid-template-columns:minmax(150px,.32fr) 1fr;gap:12px 24px;padding:18px 0;border-top:1px solid var(--line)}
+.row h3{margin-bottom:5px}
+details{border:1px solid var(--line);background:var(--panel);border-radius:6px;margin-top:10px}
+summary{padding:14px 16px;cursor:pointer;font-weight:700}
+.cv{padding:4px 18px 18px}
+.cv h3{margin:9px 0}
+.cv ul{margin:8px 0;padding-left:22px;color:var(--muted)}
+.print{display:none}
+button{font:inherit;border:0;cursor:pointer}
+footer{border-top:1px solid var(--line)}
+@media(max-width:820px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.feature{grid-template-columns:1fr}.feature img{height:auto;min-height:0}}
+@media(max-width:530px){.grid,.row{grid-template-columns:1fr}.wrap{width:calc(100% - 28px)}nav{gap:8px}.navlinks{gap:7px 14px}}
+@media print{body{background:white;color:black;font:11pt/1.4 system-ui}.printing header,.printing footer,.printing main>div,.printing main>section:not(#resumes),.printing #resumes>h2,.printing #resumes>p,.printing details:not(.selected),.printing summary,.printing button{display:none}.printing .wrap{width:100%}.printing section,.printing details,.printing .cv{padding:0;border:0;background:none}.printing p,.printing .cv ul{color:black}}
+</style>
+</head>
+<body>
+<header><nav class="wrap" aria-label="Main navigation"><a class="name" href="#top">Harsh Paun</a><div class="navlinks"><a href="#work">Projects</a><a href="#experience">Experience</a><a href="#resumes">Resumes</a><a href="https://github.com/techgamewithharsh-dot">GitHub</a></div></nav></header>
+<main class="wrap" id="top">
+<div class="hero">
+<div><p class="kicker">Computer Science · University of Cincinnati</p><h1>Harsh Paun</h1><p class="lede">I design, test, and ship software. My work spans native Apple apps, machine learning prototypes, and interactive projects in Unity.</p><div class="actions"><a class="button" href="#work">Explore projects</a><a href="#resumes">View resumes</a><a href="https://www.linkedin.com/in/harsh-paun-4a5881321/">LinkedIn</a></div></div>
+<aside><strong>Summer 2027 internship / co-op</strong><p>Software engineering, data and AI, and real-time applications.</p></aside>
+</div>
+<section id="work" aria-labelledby="work-title">
+<h2 id="work-title">Selected projects</h2>
+<article class="feature">
+<img src="https://raw.githubusercontent.com/techgamewithharsh-dot/zenith-dynamic-notch/main/docs/assets/screens/files-wide.jpg" alt="Zenith’s macOS file shelf with sharing and clipboard controls" width="900" height="506" loading="lazy">
+<div class="body"><p class="tags">Swift · SwiftUI · macOS</p><h3>Zenith</h3><p>A macOS utility that puts file sharing, media controls, search, and focus tools in one place. I shipped the public beta and v2, including Developer ID signing, notarization, and an updater that restores the previous release if an update fails.</p><div class="metrics"><span><b>1.1 GiB to 144 MiB</b>Peak memory</span><span><b>~15% to ~0%</b>Compositor CPU</span><span><b>720 fewer per hour</b>Process launches</span></div><div class="actions"><a href="https://techgamewithharsh-dot.github.io/zenith-dynamic-notch/">Project site</a><a href="https://github.com/techgamewithharsh-dot/zenith-dynamic-notch">Repository &amp; releases</a></div></div>
+</article>
+<div class="grid">
+<article class="card"><p class="tags">Python · MONAI · FastAPI</p><h3>NeuroSight</h3><p>Hacknite team research prototype for comparing baseline and follow-up brain MRI, combining segmentation, volume comparisons, and 3D visualization.</p><div class="actions"><a href="https://github.com/techgamewithharsh-dot/Hacknite-NeuroSight">View source</a></div></article>
+<article class="card"><p class="tags">Swift · iOS · macOS</p><h3>Dual Display Pro</h3><p>Secondary screen mirroring and workspace extension at 1080p/60 Hz. Published on the App Store with a macOS companion on GitHub.</p><div class="actions"><a href="https://github.com/techgamewithharsh-dot/Dual_Display_For_Mac">Mac companion</a></div></article>
+<article class="card"><p class="tags">Media · Apple platforms</p><h3>Cinematic Player &amp; AirSend TV</h3><p>Cinematic Player supports hardware-accelerated 4K/HDR playback. AirSend TV uses Apple MultipeerConnectivity for peer-to-peer media streaming and file sharing.</p><div class="actions"><a href="https://apps.apple.com/us/developer/harsh-paun/id1895154152">App Store profile</a></div></article>
+<article class="card"><p class="tags">Unity · Physics · Gameplay</p><h3>Unity prototypes</h3><p>Built jump, suspension, and collision mechanics for Earn to Mars, a 2D game in development. Prototyped a 3D mountain-road environment and iterated on vehicle suspension.</p></article>
+<article class="card"><p class="tags">Software design · Figma</p><h3>Gear Union</h3><p>Led a four-person course team building a vehicle platform for buying and selling, service booking, insurance, and modifications. Built service booking and coordinated integration testing.</p></article>
+<article class="card"><p class="tags">Python · Java · C</p><h3>Algorithms &amp; data structures</h3><p>Implemented and compared sorting, dynamic programming, and greedy approaches through coursework, including matrix chain multiplication and Huffman coding.</p><div class="actions"><a href="https://github.com/techgamewithharsh-dot/neetcode-submissions">Practice repository</a></div></article>
+<article class="card"><p class="tags">Coohom · Visualization</p><h3>Residential interiors</h3><p>Modeled three bedrooms from the measured floor plan, developed material palettes and day/night lighting studies, and produced interactive 360° panoramas.</p><div class="actions"><a href="https://claude.ai/artifact/TSvAbYhtdwbzE6J1dr7G2Y">Design portfolio</a></div></article>
+<article class="card"><p class="tags">Apple platforms · Product design</p><h3>RetroArc</h3><p>Retro game emulator concept for Apple devices, with a project overview and app icon assets available publicly.</p><div class="actions"><a href="https://github.com/techgamewithharsh-dot/RetroArc-Game-Emulator">Project overview</a></div></article>
+</div>
+</section>
+<section id="experience" aria-labelledby="experience-title"><h2 id="experience-title">Experience</h2>
+<article class="row"><p class="date">2026–Present</p><div><h3>Independent App Publisher</h3><p>Owned product requirements, UX, testing, and release across iOS, macOS, and tvOS. Used AI-assisted development for implementation and iteration. Released three App Store apps that recorded 1,000+ combined downloads, plus Zenith for macOS.</p></div></article>
+<article class="row"><p class="date">Jan–Mar 2026</p><div><h3>Software Development Team Lead · Nirma University</h3><p>Led Gear Union from requirements through demo, owning service booking and driving integration across four modules.</p></div></article>
+<article class="row"><p class="date">2025</p><div><h3>Web Development Intern · T. J. Agro Industries</h3><p>Designed and launched a manufacturer’s website using GoDaddy Website Builder, including product pages, the company profile, and a customer inquiry form.</p><a href="https://tjagro.com/">Company website</a></div></article>
+<article class="row"><p class="date">Dec 2024–Feb 2026</p><div><h3>Founder &amp; Digital Media Producer · Prestige Timepieces</h3><p>Grew the channel to 50,000+ subscribers and 70 million+ views. Produced 4K HDR watch showcases in Final Cut Pro and used YouTube Studio analytics to refine content.</p></div></article>
+<article class="row"><p class="date">Grades 9–10</p><div><h3>IT &amp; Event Support · DPS School</h3><p>Helped restore school computers and managed media, computers, and sound for the Grade 10 annual function. Personal IT projects also included OS installs, router setup, PC assembly, and home AV configuration.</p></div></article>
+</section>
+<section id="education" aria-labelledby="education-title"><h2 id="education-title">Education</h2>
+<article class="row"><p class="date">Aug 2026–Present</p><div><h3>University of Cincinnati</h3><p>B.S. in Computer Science · 4.00 GPA · Expected graduation 2029</p></div></article>
+<article class="row"><p class="date">Aug 2024–May 2026</p><div><h3>Nirma University</h3><p>Completed two years of Computer Science and Engineering coursework in a 2+2 program before transferring to Cincinnati.</p></div></article>
+</section>
+<section id="resumes" aria-labelledby="resumes-title"><h2 id="resumes-title">Resumes</h2><p>Choose a role to view a tailored resume or save it as a PDF.</p>
+<details><summary>Software engineering &amp; product</summary><div class="cv"><h3>Harsh Paun · Software engineering &amp; product</h3><p><a href="https://www.linkedin.com/in/harsh-paun-4a5881321/">LinkedIn</a> · <a href="https://github.com/techgamewithharsh-dot">GitHub</a></p><ul><li>Led a four-person team on Gear Union, building service booking and coordinating integration testing.</li><li>Shipped Zenith to v2 with Developer ID signing, notarization, a rollback-capable updater, and lower compositor CPU and memory use.</li><li>Designed and launched T. J. Agro Industries’ product and inquiry website.</li></ul><p><strong>Education</strong> · University of Cincinnati, B.S. Computer Science, 4.00 GPA, expected 2029. Nirma University, CSE coursework, 2024–2026.</p><p><strong>Skills</strong> · Swift, Python, C, Java, basic SQL, Git, Xcode, SwiftUI, Figma</p><div class="actions"><button class="button print" type="button">Print / save as PDF</button></div></div></details>
+<details><summary>AI &amp; data science</summary><div class="cv"><h3>Harsh Paun · AI &amp; data science</h3><p><a href="https://www.linkedin.com/in/harsh-paun-4a5881321/">LinkedIn</a> · <a href="https://github.com/techgamewithharsh-dot">GitHub</a></p><ul><li>Built NeuroSight with a Hacknite team to explore longitudinal MRI segmentation and visualization using Python, MONAI and FastAPI.</li><li>Integrated on-device Core ML face recognition in a Zenith prototype workflow.</li><li>Used YouTube Studio retention and click-through metrics to guide production for Prestige Timepieces.</li></ul><p><strong>Education</strong> · University of Cincinnati, B.S. Computer Science, 4.00 GPA, expected 2029. Nirma University, CSE coursework, 2024–2026.</p><p><strong>Skills</strong> · Python, Core ML, MONAI, FastAPI, probability and statistics, linear algebra, data structures</p><div class="actions"><button class="button print" type="button">Print / save as PDF</button></div></div></details>
+<details><summary>Apple platform development &amp; QA</summary><div class="cv"><h3>Harsh Paun · Apple platform development &amp; QA</h3><p><a href="https://www.linkedin.com/in/harsh-paun-4a5881321/">LinkedIn</a> · <a href="https://github.com/techgamewithharsh-dot">GitHub</a></p><ul><li>Released three App Store apps and distributed Zenith for macOS. Managed release metadata, localization, beta testing, and review feedback.</li><li>Tested Cinematic Player for 4K/HDR playback and codec compatibility, and tested AirSend TV across devices for local streaming.</li><li>Implemented rollback behavior for Zenith updates and reduced peak memory from 1.1 GiB to 144 MiB.</li></ul><p><strong>Education</strong> · University of Cincinnati, B.S. Computer Science, 4.00 GPA, expected 2029. Nirma University, CSE coursework, 2024–2026.</p><p><strong>Skills</strong> · Swift, SwiftUI, Xcode, TestFlight, App Store Connect, MultipeerConnectivity, regression testing</p><div class="actions"><button class="button print" type="button">Print / save as PDF</button></div></div></details>
+<details><summary>Games, graphics &amp; systems</summary><div class="cv"><h3>Harsh Paun · Games, graphics &amp; systems</h3><p><a href="https://www.linkedin.com/in/harsh-paun-4a5881321/">LinkedIn</a> · <a href="https://github.com/techgamewithharsh-dot">GitHub</a></p><ul><li>Built jumping, collisions, and suspension for Earn to Mars in Unity and prototyped a 3D driving environment.</li><li>Worked with hardware-accelerated video playback and secondary display rendering on Apple platforms.</li><li>Completed coursework in digital logic, operating systems, computer organization, physics, and linear algebra.</li></ul><p><strong>Education</strong> · University of Cincinnati, B.S. Computer Science, 4.00 GPA, expected 2029. Nirma University, CSE coursework, 2024–2026.</p><p><strong>Skills</strong> · Unity, C, Python, Swift, rigid-body physics, performance profiling</p><div class="actions"><button class="button print" type="button">Print / save as PDF</button></div></div></details>
+<details><summary>IT support &amp; web</summary><div class="cv"><h3>Harsh Paun · IT support &amp; web</h3><p><a href="https://www.linkedin.com/in/harsh-paun-4a5881321/">LinkedIn</a> · <a href="https://github.com/techgamewithharsh-dot">GitHub</a></p><ul><li>Helped DPS School IT restore computers and managed audiovisual setup for the Grade 10 annual function.</li><li>Completed 20+ OS installations across Windows, macOS, Linux, and ChromeOS. Configured routers, assembled PC components, and set up home AV equipment.</li><li>Designed and launched T. J. Agro Industries’ website with a customer inquiry form.</li></ul><p><strong>Education</strong> · University of Cincinnati, B.S. Computer Science, 4.00 GPA, expected 2029. Nirma University, CSE coursework, 2024–2026.</p><p><strong>Skills</strong> · Windows, macOS, Linux, ChromeOS, Terminal, PC hardware, networking, AV, GoDaddy Website Builder</p><div class="actions"><button class="button print" type="button">Print / save as PDF</button></div></div></details>
+<details><summary>Design &amp; digital media</summary><div class="cv"><h3>Harsh Paun · Design &amp; digital media</h3><p><a href="https://www.linkedin.com/in/harsh-paun-4a5881321/">LinkedIn</a> · <a href="https://github.com/techgamewithharsh-dot">GitHub</a></p><ul><li>Modeled three residential rooms in Coohom and created material palettes, lighting studies, and interactive 360° panoramas.</li><li>Produced 4K HDR watch content for Prestige Timepieces, which reached 50,000+ subscribers and 70 million+ views.</li><li>Owned UX and product design decisions for native Apple apps from concept through launch.</li></ul><p><strong>Education</strong> · University of Cincinnati, B.S. Computer Science, 4.00 GPA, expected 2029. Nirma University, CSE coursework, 2024–2026.</p><p><strong>Skills</strong> · Coohom, Final Cut Pro, Figma, material and lighting studies, YouTube Studio</p><div class="actions"><button class="button print" type="button">Print / save as PDF</button></div></div></details>
+</section>
+</main>
+<footer><div class="wrap"><p>Harsh Paun · Cincinnati, Ohio</p><div class="navlinks"><a href="https://github.com/techgamewithharsh-dot">GitHub</a><a href="https://www.linkedin.com/in/harsh-paun-4a5881321/">LinkedIn</a></div></div></footer>
+<script>
+for (const button of document.querySelectorAll('.print')) {
+  button.style.display = 'inline-block';
+  button.addEventListener('click', () => {
+    document.body.classList.add('printing');
+    const resume = button.closest('details');
+    resume.classList.add('selected');
+    window.print();
+    resume.classList.remove('selected');
+    document.body.classList.remove('printing');
+  });
+}
+</script>
+</body>
+</html>
